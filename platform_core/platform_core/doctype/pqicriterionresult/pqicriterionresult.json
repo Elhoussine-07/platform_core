@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-17 17:42:07.033666",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "criterion",
+  "score",
+  "penalty_reason",
+  "ai_recommendation"
+ ],
+ "fields": [
+  {
+   "fieldname": "criterion",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Crit\u00e8re",
+   "options": "PQICriterionResult",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "score",
+   "fieldtype": "Int",
+   "label": "Score obtenu"
+  },
+  {
+   "fieldname": "penalty_reason",
+   "fieldtype": "Data",
+   "label": "Motif de p\u00e9nalit\u00e9"
+  },
+  {
+   "fieldname": "ai_recommendation",
+   "fieldtype": "Small Text",
+   "label": "Recommandation IA"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-07-17 17:58:28.948711",
+ "modified_by": "Administrator",
+ "module": "platform_core",
+ "name": "PQICriterionResult",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

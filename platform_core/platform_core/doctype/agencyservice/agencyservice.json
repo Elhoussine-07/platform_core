@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-07-17 16:43:24.010801",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "service_name",
+  "description",
+  "price_range",
+  "tech_stack",
+  "skills",
+  "projects_in_progress"
+ ],
+ "fields": [
+  {
+   "fieldname": "service_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nom du service",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "price_range",
+   "fieldtype": "Data",
+   "label": "Fourchette de prix"
+  },
+  {
+   "fieldname": "tech_stack",
+   "fieldtype": "Data",
+   "label": "Stack technique"
+  },
+  {
+   "fieldname": "skills",
+   "fieldtype": "Data",
+   "label": "Comp\u00e9tences"
+  },
+  {
+   "default": "0",
+   "fieldname": "projects_in_progress",
+   "fieldtype": "Int",
+   "label": "Projets en cours"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-07-17 16:43:24.010801",
+ "modified_by": "Administrator",
+ "module": "platform_core",
+ "name": "AgencyService",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

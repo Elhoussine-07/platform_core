@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-07-17 16:43:24.074589",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "status",
+  "image",
+  "video_url",
+  "result_url",
+  "budget",
+  "collaboration_period",
+  "agency_feedback",
+  "problem_solution",
+  "client_confirmed"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Titre",
+   "reqd": 1
+  },
+  {
+   "default": "Completed",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Statut",
+   "options": "Completed\nIn Progress"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "video_url",
+   "fieldtype": "Data",
+   "label": "Lien vid\u00e9o"
+  },
+  {
+   "fieldname": "result_url",
+   "fieldtype": "Data",
+   "label": "Lien r\u00e9sultat"
+  },
+  {
+   "fieldname": "budget",
+   "fieldtype": "Currency",
+   "label": "Budget"
+  },
+  {
+   "fieldname": "collaboration_period",
+   "fieldtype": "Data",
+   "label": "P\u00e9riode de collaboration"
+  },
+  {
+   "fieldname": "agency_feedback",
+   "fieldtype": "Text Editor",
+   "label": "Avis de l'agence"
+  },
+  {
+   "fieldname": "problem_solution",
+   "fieldtype": "Text Editor",
+   "label": "Probl\u00e9matique/Solution"
+  },
+  {
+   "default": "0",
+   "fieldname": "client_confirmed",
+   "fieldtype": "Check",
+   "label": "Projet confirm\u00e9",
+   "permlevel": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-07-17 16:43:24.074589",
+ "modified_by": "Administrator",
+ "module": "platform_core",
+ "name": "AgencyPortfolio",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-17 22:04:55.310630",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "agency",
+  "status",
+  "matching_score",
+  "success_prediction",
+  "source",
+  "accepted_on",
+  "archived_on",
+  "archive_reason"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Projet",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agency",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Agence",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "default": "Re\u00e7ue",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Statut",
+   "options": "Re\u00e7ue\nAccept\u00e9e\nDevis envoy\u00e9\nGagn\u00e9e\nTermin\u00e9e\nArchiv\u00e9e",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "matching_score",
+   "fieldtype": "Percent",
+   "label": "Score de pertinence",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "success_prediction",
+   "fieldtype": "Percent",
+   "label": "Pr\u00e9diction de succ\u00e8s",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "Shortlist IA\nUnicast\nMulticast\nDisponibles"
+  },
+  {
+   "fieldname": "accepted_on",
+   "fieldtype": "Datetime",
+   "label": "Accept\u00e9e le",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "archived_on",
+   "fieldtype": "Datetime",
+   "label": "Archiv\u00e9e le",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "archive_reason",
+   "fieldtype": "Select",
+   "label": "Motif d'archivage",
+   "options": "Refus agence\nRefus client\nEscalade\nSuspendu Rejet\u00e9",
+   "permlevel": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-17 22:15:23.009015",
+ "modified_by": "Administrator",
+ "module": "platform_core",
+ "name": "Opportunity",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

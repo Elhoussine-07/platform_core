@@ -16,7 +16,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Facture",
-   "options": "User",
+   "options": "Invoice",
    "reqd": 1
   },
   {
@@ -37,7 +37,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-07-17 17:40:51.900872",
+ "modified": "2026-07-17 23:57:35.350545",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "CreditApplication",

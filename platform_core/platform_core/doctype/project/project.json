@@ -5,18 +5,182 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_bqxs"
+  "client",
+  "title",
+  "description",
+  "need_type",
+  "channel",
+  "category",
+  "sub_category",
+  "budget_min",
+  "budget_max",
+  "delivery_delay_days",
+  "location",
+  "status",
+  "rejection_substatus",
+  "cdc_file",
+  "cdc_locked",
+  "shortlist_ia",
+  "acceptance_date",
+  "start_date",
+  "initial_end_date",
+  "total_suspension_days",
+  "expected_end_date",
+  "completion_confirmed_by_client",
+  "completion_validated_by_moderator",
+  "repost_count"
  ],
  "fields": [
   {
-   "fieldname": "section_break_bqxs",
-   "fieldtype": "Section Break"
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Client",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Titre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "default": "Projet",
+   "fieldname": "need_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type de besoin",
+   "options": "Projet\nStage\nJob",
+   "reqd": 1
+  },
+  {
+   "default": "Smart Briefing",
+   "fieldname": "channel",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Canal",
+   "options": "Smart Briefing\nUnicast\nMulticast",
+   "reqd": 1
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Cat\u00e9gorie",
+   "options": "User"
+  },
+  {
+   "fieldname": "sub_category",
+   "fieldtype": "Link",
+   "label": "Sous-cat\u00e9gorie",
+   "options": "User"
+  },
+  {
+   "fieldname": "budget_min",
+   "fieldtype": "Currency",
+   "label": "Budget minimum"
+  },
+  {
+   "fieldname": "budget_max",
+   "fieldtype": "Currency",
+   "label": "Budget maximum"
+  },
+  {
+   "fieldname": "delivery_delay_days",
+   "fieldtype": "Int",
+   "label": "D\u00e9lai de r\u00e9alisation (jours)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Localisation"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Statut",
+   "options": "Draft\nPosted\nAwaiting\nIn Progress\nSuspended\nCompleted\nRejected",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rejection_substatus",
+   "fieldtype": "Select",
+   "label": "Sous-statut de rejet",
+   "options": "Refus\u00e9\nSupprim\u00e9\nClient inactif"
+  },
+  {
+   "fieldname": "cdc_file",
+   "fieldtype": "Attach",
+   "label": "CDC PDF"
+  },
+  {
+   "default": "0",
+   "fieldname": "cdc_locked",
+   "fieldtype": "Check",
+   "label": "CDC verrouill\u00e9"
+  },
+  {
+   "fieldname": "shortlist_ia",
+   "fieldtype": "JSON",
+   "label": "Shortlist IA"
+  },
+  {
+   "fieldname": "acceptance_date",
+   "fieldtype": "Datetime",
+   "label": "Date d'acceptation"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Datetime",
+   "label": "Date de d\u00e9but"
+  },
+  {
+   "fieldname": "initial_end_date",
+   "fieldtype": "Date",
+   "label": "Date de fin initiale"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_suspension_days",
+   "fieldtype": "Int",
+   "label": "Jours de suspension cumul\u00e9s"
+  },
+  {
+   "fieldname": "expected_end_date",
+   "fieldtype": "Date",
+   "label": "Date de fin pr\u00e9vue (recalcul\u00e9e)"
+  },
+  {
+   "default": "0",
+   "fieldname": "completion_confirmed_by_client",
+   "fieldtype": "Check",
+   "label": "Confirm\u00e9 par le client"
+  },
+  {
+   "default": "0",
+   "fieldname": "completion_validated_by_moderator",
+   "fieldtype": "Check",
+   "label": "Valid\u00e9 par le mod\u00e9rateur"
+  },
+  {
+   "default": "0",
+   "fieldname": "repost_count",
+   "fieldtype": "Int",
+   "label": " Nombre de republications"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-17 18:01:29.751174",
+ "modified": "2026-07-17 23:59:41.421100",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "Project",

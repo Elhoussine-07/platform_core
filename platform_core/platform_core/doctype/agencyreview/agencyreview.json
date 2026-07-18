@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-17 23:41:18.343326",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "client",
+  "agency",
+  "project",
+  "rating",
+  "quality_score",
+  "deadline_score",
+  "communication_score",
+  "value_score",
+  "understanding_score",
+  "comment",
+  "status",
+  "is_verified"
+ ],
+ "fields": [
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Client",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agency",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Agence",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Projet",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Note globale",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quality_score",
+   "fieldtype": "Int",
+   "label": "Qualit\u00e9 du travail"
+  },
+  {
+   "fieldname": "deadline_score",
+   "fieldtype": "Int",
+   "label": "Respect des d\u00e9lais"
+  },
+  {
+   "fieldname": "communication_score",
+   "fieldtype": "Int",
+   "label": "Communication"
+  },
+  {
+   "fieldname": "value_score",
+   "fieldtype": "Int",
+   "label": "Rapport qualit\u00e9-prix"
+  },
+  {
+   "fieldname": "understanding_score",
+   "fieldtype": "Int",
+   "label": "Compr\u00e9hension du besoin"
+  },
+  {
+   "fieldname": "comment",
+   "fieldtype": "Text Editor",
+   "label": "Commentaire"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Statut",
+   "options": "Pending\nApproved\nRejected",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_verified",
+   "fieldtype": "Check",
+   "label": "Avis v\u00e9rifi\u00e9",
+   "permlevel": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-17 23:50:05.236961",
+ "modified_by": "Administrator",
+ "module": "platform_core",
+ "name": "AgencyReview",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

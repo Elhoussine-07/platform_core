@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-17 22:29:30.888190",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "requested_by",
+  "justification",
+  "status",
+  "validation_date",
+  "resume_date",
+  "suspension_days",
+  "moderator"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Projet",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "default": "Client",
+   "fieldname": "requested_by",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Demand\u00e9 par",
+   "options": "Client\nAgency",
+   "reqd": 1
+  },
+  {
+   "fieldname": "justification",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Justification",
+   "reqd": 1
+  },
+  {
+   "default": "Requested",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Statut",
+   "options": "Requested\nValidated\nRefused\nResumed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "validation_date",
+   "fieldtype": "Datetime",
+   "label": "Valid\u00e9e le (mod\u00e9rateur)",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "resume_date",
+   "fieldtype": "Datetime",
+   "label": "Reprise le (clic Reprendre)",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "suspension_days",
+   "fieldtype": "Int",
+   "label": "Jours de suspension",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "moderator",
+   "fieldtype": "Link",
+   "label": "Mod\u00e9rateur",
+   "options": "User",
+   "permlevel": 1,
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-17 22:38:04.759232",
+ "modified_by": "Administrator",
+ "module": "platform_core",
+ "name": "ProjectSuspension",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

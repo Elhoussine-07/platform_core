@@ -144,7 +144,7 @@
    "fieldname": "social_links",
    "fieldtype": "Table",
    "label": "R\u00e9seaux sociaux",
-   "options": "User Email"
+   "options": "AgencySocialLink"
   },
   {
    "fieldname": "rating",
@@ -178,7 +178,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-17 15:55:28.415844",
+ "modified": "2026-07-18 12:46:53.158786",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "AgencyProfile",

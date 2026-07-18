@@ -28,14 +28,14 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Agence",
-   "options": "User",
+   "options": "AgencyProfile",
    "reqd": 1
   },
   {
    "fieldname": "payment_method_ref",
    "fieldtype": "Link",
    "label": "Mode de paiement enregistr\u00e9",
-   "options": "User"
+   "options": "PaymentMethod"
   },
   {
    "fieldname": "amount",
@@ -77,7 +77,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-17 23:11:08.190713",
+ "modified": "2026-07-18 12:58:10.395022",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "Payment",

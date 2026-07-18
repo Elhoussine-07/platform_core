@@ -72,7 +72,7 @@
    "fieldname": "agency_context",
    "fieldtype": "Link",
    "label": "Contexte agence",
-   "options": "User"
+   "options": "AgencyProfile"
   },
   {
    "default": "0",
@@ -110,7 +110,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-18 12:51:41.482104",
+ "modified": "2026-07-18 13:06:09.671508",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "Notif",

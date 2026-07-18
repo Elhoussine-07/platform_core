@@ -2,22 +2,77 @@
  "actions": [],
  "allow_bulk_edit": 1,
  "allow_rename": 1,
- "creation": "2026-07-17 12:39:07.044427",
+ "creation": "2026-07-18 12:42:26.654349",
  "doctype": "DocType",
+ "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "section_break_8nic"
+  "country",
+  "id_label",
+  "validation_regex",
+  "example_format",
+  "registry_api_url",
+  "registry_api_key",
+  "registry_check_enabled",
+  "is_active"
  ],
  "fields": [
   {
-   "fieldname": "section_break_8nic",
-   "fieldtype": "Section Break"
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Pays",
+   "options": "Country",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "id_label",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nom de l'identifiant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "validation_regex",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Regex de validation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "example_format",
+   "fieldtype": "Data",
+   "label": "Exemple de format"
+  },
+  {
+   "fieldname": "registry_api_url",
+   "fieldtype": "Data",
+   "label": "URL API de v\u00e9rification"
+  },
+  {
+   "fieldname": "registry_api_key",
+   "fieldtype": "Password",
+   "label": "Cl\u00e9 API du registre",
+   "permlevel": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "registry_check_enabled",
+   "fieldtype": "Check",
+   "label": "V\u00e9rification externe activ\u00e9e"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "R\u00e8gle active"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-17 12:39:07.044427",
+ "modified": "2026-07-18 12:42:26.654349",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "CountryLegalIDRule",
@@ -34,11 +89,40 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Moderator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Client",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agency",
+   "share": 1
   }
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

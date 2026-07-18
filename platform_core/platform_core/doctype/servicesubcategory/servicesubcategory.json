@@ -6,18 +6,37 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_qpx8"
+  "subcategory_name",
+  "parent_category",
+  "is_active"
  ],
  "fields": [
   {
-   "fieldname": "section_break_qpx8",
-   "fieldtype": "Section Break"
+   "fieldname": "subcategory_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sous-cat\u00e9gorie",
+   "reqd": 1
+  },
+  {
+   "fieldname": "parent_category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cat\u00e9gorie parente",
+   "options": "ServiceCategory",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Active"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-17 12:35:21.743546",
+ "modified": "2026-07-18 12:34:12.807192",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "ServiceSubCategory",

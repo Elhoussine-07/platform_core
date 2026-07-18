@@ -18,7 +18,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Lead",
-   "options": "User",
+   "options": "DetectedLead",
    "reqd": 1
   },
   {
@@ -26,7 +26,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Agence",
-   "options": "User",
+   "options": "AgencyProfile",
    "reqd": 1
   },
   {
@@ -61,7 +61,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-18 12:30:27.064464",
+ "modified": "2026-07-18 13:05:15.975296",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "ProspectionEmail",

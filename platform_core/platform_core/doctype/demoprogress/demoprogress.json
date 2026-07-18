@@ -24,7 +24,7 @@
    "fieldname": "last_video",
    "fieldtype": "Link",
    "label": "Derni\u00e8re vid\u00e9o vue",
-   "options": "DemoProgress"
+   "options": "DemoVideo"
   },
   {
    "default": "0",
@@ -42,7 +42,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-18 11:59:27.606018",
+ "modified": "2026-07-18 12:31:22.920218",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "DemoProgress",

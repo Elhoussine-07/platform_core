@@ -41,7 +41,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Agence",
-   "options": "User",
+   "options": "AgencyProfile",
    "reqd": 1
   },
   {
@@ -114,7 +114,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-17 22:28:55.632498",
+ "modified": "2026-07-18 12:54:30.921304",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "Proposal",

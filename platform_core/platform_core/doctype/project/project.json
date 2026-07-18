@@ -36,7 +36,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Client",
-   "options": "User",
+   "options": "ClientProfile",
    "reqd": 1
   },
   {
@@ -73,13 +73,13 @@
    "fieldname": "category",
    "fieldtype": "Link",
    "label": "Cat\u00e9gorie",
-   "options": "User"
+   "options": "ServiceCategory"
   },
   {
    "fieldname": "sub_category",
    "fieldtype": "Link",
    "label": "Sous-cat\u00e9gorie",
-   "options": "User"
+   "options": "ServiceSubCategory"
   },
   {
    "fieldname": "budget_min",
@@ -180,7 +180,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-17 23:59:41.421100",
+ "modified": "2026-07-18 12:52:50.493535",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "Project",

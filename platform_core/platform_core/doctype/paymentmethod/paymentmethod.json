@@ -18,7 +18,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Agence",
-   "options": "User",
+   "options": "AgencyProfile",
    "reqd": 1
   },
   {
@@ -59,7 +59,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-17 23:19:38.344067",
+ "modified": "2026-07-18 12:58:28.427715",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "PaymentMethod",

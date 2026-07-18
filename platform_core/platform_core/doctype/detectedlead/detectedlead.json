@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-18 11:28:08.504286",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "agency",
+  "resolved_company_name",
+  "ip_hash",
+  "cumulative_score",
+  "classification",
+  "has_favorited",
+  "first_seen",
+  "last_seen"
+ ],
+ "fields": [
+  {
+   "fieldname": "agency",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Agence",
+   "options": "AgencyProfile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "resolved_company_name",
+   "fieldtype": "Data",
+   "label": "Entreprise r\u00e9solue"
+  },
+  {
+   "fieldname": "ip_hash",
+   "fieldtype": "Data",
+   "label": "Empreinte IP (hash)",
+   "permlevel": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "cumulative_score",
+   "fieldtype": "Int",
+   "label": "Score cumul\u00e9 (fen\u00eatre 7 j)",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "default": "cold",
+   "fieldname": "classification",
+   "fieldtype": "Select",
+   "label": "Classification",
+   "options": "hot\nwarm\ncold",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "has_favorited",
+   "fieldtype": "Check",
+   "label": "A ajout\u00e9 en favori",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "first_seen",
+   "fieldtype": "Datetime",
+   "label": "Premi\u00e8re visite",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_seen",
+   "fieldtype": "Datetime",
+   "label": "Derni\u00e8re visite",
+   "permlevel": 1,
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-18 11:43:54.512209",
+ "modified_by": "Administrator",
+ "module": "platform_core",
+ "name": "DetectedLead",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-18 11:08:11.397324",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "agency",
+  "evaluation_date",
+  "results",
+  "total_score"
+ ],
+ "fields": [
+  {
+   "fieldname": "agency",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Agence",
+   "options": "AgencyProfile",
+   "reqd": 1
+  },
+  {
+   "default": "Now",
+   "fieldname": "evaluation_date",
+   "fieldtype": "Datetime",
+   "label": "Date d'\u00e9valuation",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "results",
+   "fieldtype": "Table",
+   "label": "R\u00e9sultats",
+   "options": "PQICriterionResult",
+   "permlevel": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_score",
+   "fieldtype": "Int",
+   "label": "Score total",
+   "permlevel": 1,
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-18 11:08:11.397324",
+ "modified_by": "Administrator",
+ "module": "platform_core",
+ "name": "PQIEvaluation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Moderator",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agency",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

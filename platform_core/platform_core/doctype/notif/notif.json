@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-18 12:36:08.527602",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "type",
+  "title",
+  "message",
+  "link",
+  "reference_doctype",
+  "reference_name",
+  "agency_context",
+  "action_required",
+  "is_read",
+  "is_archived",
+  "created_date",
+  "archived_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Utilisateur",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "default": "System",
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Project\nProposal\nMessage\nReview\nSystem\nAlert",
+   "reqd": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Titre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "message",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Message",
+   "reqd": 1
+  },
+  {
+   "fieldname": "link",
+   "fieldtype": "Data",
+   "label": "Lien"
+  },
+  {
+   "fieldname": "reference_doctype",
+   "fieldtype": "Link",
+   "label": "DocType concern\u00e9",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Dynamic Link",
+   "label": "Document concern\u00e9",
+   "options": "reference_doctype"
+  },
+  {
+   "fieldname": "agency_context",
+   "fieldtype": "Link",
+   "label": "Contexte agence",
+   "options": "User"
+  },
+  {
+   "default": "0",
+   "fieldname": "action_required",
+   "fieldtype": "Check",
+   "label": "Action requise"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_read",
+   "fieldtype": "Check",
+   "label": "Lue"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_archived",
+   "fieldtype": "Check",
+   "label": "Archiv\u00e9e",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "created_date",
+   "fieldtype": "Datetime",
+   "label": "Date de cr\u00e9ation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "archived_date",
+   "fieldtype": "Datetime",
+   "label": "Date d'archivage",
+   "permlevel": 1,
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-18 12:51:41.482104",
+ "modified_by": "Administrator",
+ "module": "platform_core",
+ "name": "Notif",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

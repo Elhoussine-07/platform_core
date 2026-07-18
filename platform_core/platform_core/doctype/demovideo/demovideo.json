@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-18 12:52:49.529531",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "account_type",
+  "sequence_order",
+  "video_url",
+  "duration_seconds",
+  "feature_tag",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Titre",
+   "reqd": 1
+  },
+  {
+   "default": "Les deux",
+   "fieldname": "account_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type de compte",
+   "options": "Client\nAgence\nLes deux",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "sequence_order",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Ordre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "video_url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "URL de la vid\u00e9o",
+   "reqd": 1
+  },
+  {
+   "fieldname": "duration_seconds",
+   "fieldtype": "Int",
+   "label": "Dur\u00e9e (secondes)"
+  },
+  {
+   "fieldname": "feature_tag",
+   "fieldtype": "Data",
+   "label": "Fonctionnalit\u00e9 li\u00e9e"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Active"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-18 12:57:31.490108",
+ "modified_by": "Administrator",
+ "module": "platform_core",
+ "name": "DemoVideo",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

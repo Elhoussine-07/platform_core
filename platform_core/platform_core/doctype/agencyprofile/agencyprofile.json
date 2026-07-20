@@ -31,7 +31,11 @@
   "pqi_score",
   "profile_completion",
   "reviews_count",
-  "offers_suspended"
+  "offers_suspended",
+  "services",
+  "portfolio",
+  "team",
+  "certifications"
  ],
  "fields": [
   {
@@ -173,12 +177,36 @@
    "fieldtype": "Check",
    "label": "Offres suspendues",
    "permlevel": 1
+  },
+  {
+   "fieldname": "services",
+   "fieldtype": "Table",
+   "label": "Services",
+   "options": "AgencyService"
+  },
+  {
+   "fieldname": "portfolio",
+   "fieldtype": "Table",
+   "label": "Portfolio",
+   "options": "AgencyPortfolio"
+  },
+  {
+   "fieldname": "team",
+   "fieldtype": "Table",
+   "label": "\u00c9quipe",
+   "options": "AgencyTeam"
+  },
+  {
+   "fieldname": "certifications",
+   "fieldtype": "Table",
+   "label": "Certifications",
+   "options": "AgencyCertification"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-18 12:46:53.158786",
+ "modified": "2026-07-20 13:56:07.196574",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "AgencyProfile",

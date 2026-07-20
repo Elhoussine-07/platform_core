@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_bulk_edit": 1,
  "allow_rename": 1,
  "creation": "2026-07-17 14:34:53.192535",
  "doctype": "DocType",
@@ -134,7 +133,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-17 14:48:32.645641",
+ "modified": "2026-07-20 16:30:36.660019",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "ClientProfile",
@@ -149,6 +148,17 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agency",
    "share": 1,
    "write": 1
   }

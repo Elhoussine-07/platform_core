@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "INV-.#####",
  "creation": "2026-07-17 22:43:34.651918",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -138,10 +139,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-18 12:57:21.244475",
+ "modified": "2026-07-20 11:58:21.250633",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "Invoice",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

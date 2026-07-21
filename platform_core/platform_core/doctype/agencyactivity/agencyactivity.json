@@ -19,7 +19,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Client",
-   "options": "ClientProfile",
+   "options": "Client Profile",
    "reqd": 1
   },
   {
@@ -59,7 +59,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-18 11:08:11.961748",
+ "modified": "2026-07-20 16:16:37.585154",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "AgencyActivity",

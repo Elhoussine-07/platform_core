@@ -1,23 +1,17 @@
 {
  "actions": [],
- "allow_bulk_edit": 1,
  "allow_rename": 1,
  "creation": "2026-07-17 12:45:36.332612",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "action",
+  "action_code",
   "base_points",
   "bonus_condition",
   "bonus_points",
   "is_active"
  ],
  "fields": [
-  {
-   "fieldname": "action",
-   "fieldtype": "Select",
-   "label": "Action"
-  },
   {
    "default": "0",
    "fieldname": "base_points",
@@ -42,12 +36,19 @@
    "fieldname": "is_active",
    "fieldtype": "Check",
    "label": "R\u00e8gle active"
+  },
+  {
+   "fieldname": "action_code",
+   "fieldtype": "Select",
+   "label": "Action",
+   "options": "profile_view\nportfolio_view\nreviews_view\nteam_view\ncertificates_view\nadd_favorite",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-17 12:48:52.847065",
+ "modified": "2026-07-20 15:04:09.345070",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "LeadScoringRule",

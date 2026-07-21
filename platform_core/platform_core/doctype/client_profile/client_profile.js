@@ -1,7 +1,7 @@
 // Copyright (c) 2026, lahoussine and contributors
 // For license information, please see license.txt
 
-// frappe.ui.form.on("ClientProfile", {
+// frappe.ui.form.on("Client Profile", {
 // 	refresh(frm) {
 
 // 	},

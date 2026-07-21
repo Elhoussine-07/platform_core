@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "PROP-.#####",
  "creation": "2026-07-17 22:16:12.066318",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -114,10 +115,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-18 12:54:30.921304",
+ "modified": "2026-07-20 11:57:53.522148",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "Proposal",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

@@ -44,7 +44,7 @@
  "modified": "2026-07-17 17:58:28.948711",
  "modified_by": "Administrator",
  "module": "platform_core",
- "name": "PQICriterionResult",
+ "name": "PQI Criterion Result",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",

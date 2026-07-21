@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_bulk_edit": 1,
  "allow_rename": 1,
  "creation": "2026-07-17 15:56:16.902787",
  "doctype": "DocType",
@@ -16,41 +15,50 @@
   {
    "fieldname": "user",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Utilisateur",
-   "options": "User"
+   "options": "User",
+   "reqd": 1
   },
   {
    "fieldname": "agency",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Agence",
-   "options": "AgencyProfile"
+   "options": "AgencyProfile",
+   "reqd": 1
   },
   {
    "default": "Member",
    "fieldname": "member_role",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "R\u00f4le dans l\u2019agence",
-   "options": "Owner\nMember"
+   "options": "Owner\nMember",
+   "reqd": 1
   },
   {
    "default": "Active",
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Statut",
-   "options": "Active\nSuspended"
+   "options": "Active\nSuspended",
+   "reqd": 1
   },
   {
    "default": "Today",
    "fieldname": "joined_on",
    "fieldtype": "Date",
    "label": "Rejoint le",
-   "permlevel": 1
+   "permlevel": 1,
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-17 16:06:41.787206",
+ "modified": "2026-07-20 15:32:57.619253",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "AgencyMember",

@@ -1,7 +1,7 @@
 {
  "actions": [],
- "allow_bulk_edit": 1,
  "allow_rename": 1,
+ "autoname": "AG-.#####",
  "creation": "2026-07-17 14:51:58.173578",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -41,7 +41,10 @@
   {
    "fieldname": "agency_name",
    "fieldtype": "Data",
-   "label": "Nom de l\u2019agence"
+   "in_list_view": 1,
+   "label": "Nom de l\u2019agence",
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "logo",
@@ -102,18 +105,21 @@
   {
    "fieldname": "annual_revenue",
    "fieldtype": "Currency",
-   "label": "Chiffre"
+   "label": "Chiffre d\u2019affaires"
   },
   {
    "fieldname": "country",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Pays",
-   "options": "Country"
+   "options": "Country",
+   "reqd": 1
   },
   {
    "fieldname": "legal_id_label",
    "fieldtype": "Read Only",
-   "label": "Type d\u2019identifiant"
+   "label": "Type d\u2019identifiant",
+   "read_only": 1
   },
   {
    "fieldname": "legal_id",
@@ -135,7 +141,9 @@
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email agence"
+   "in_list_view": 1,
+   "label": "Email agence",
+   "reqd": 1
   },
   {
    "default": "0",
@@ -151,31 +159,39 @@
    "options": "AgencySocialLink"
   },
   {
+   "default": "0",
    "fieldname": "rating",
    "fieldtype": "Float",
-   "label": "Note moyenne"
+   "label": "Note moyenne",
+   "read_only": 1
   },
   {
+   "default": "0",
    "fieldname": "pqi_score",
    "fieldtype": "Int",
    "label": "Score PQI",
-   "permlevel": 1
+   "permlevel": 1,
+   "read_only": 1
   },
   {
+   "default": "0",
    "fieldname": "profile_completion",
    "fieldtype": "Percent",
-   "label": "Compl\u00e9tion du profil"
+   "label": "Compl\u00e9tion du profil",
+   "read_only": 1
   },
   {
+   "default": "0",
    "fieldname": "reviews_count",
    "fieldtype": "Int",
-   "label": "Nombre d\u2019avis"
+   "label": "Nombre d\u2019avis",
+   "read_only": 1
   },
   {
    "default": "0",
    "fieldname": "offers_suspended",
    "fieldtype": "Check",
-   "label": "Offres suspendues",
+   "label": "Offres suspendues(impay\u00e9)",
    "permlevel": 1
   },
   {
@@ -206,10 +222,15 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
+<<<<<<< HEAD
  "modified": "2026-07-20 13:56:07.196574",
+=======
+ "modified": "2026-07-20 15:29:09.925568",
+>>>>>>> b322c5b3214cacde490e0a116299ffd284cab534
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "AgencyProfile",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

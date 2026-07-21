@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "PRJ-.#####",
  "creation": "2026-07-17 18:01:29.751174",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -36,7 +37,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Client",
-   "options": "ClientProfile",
+   "options": "Client Profile",
    "reqd": 1
   },
   {
@@ -180,10 +181,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-18 12:52:50.493535",
+ "modified": "2026-07-20 16:16:38.547523",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "Project",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

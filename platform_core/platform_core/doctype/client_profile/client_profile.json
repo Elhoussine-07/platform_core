@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "CL-.#####",
  "creation": "2026-07-17 14:34:53.192535",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -30,7 +31,8 @@
    "in_list_view": 1,
    "label": "Utilisateur",
    "options": "User",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "first_name",
@@ -85,7 +87,8 @@
   {
    "fieldname": "legal_id_label",
    "fieldtype": "Read Only",
-   "label": "Type d\u2019identifiant"
+   "label": "Type d\u2019identifiant",
+   "read_only": 1
   },
   {
    "fieldname": "legal_id",
@@ -104,39 +107,45 @@
    "fieldname": "trust_score",
    "fieldtype": "Float",
    "label": "Score de confiance",
-   "permlevel": 1
+   "permlevel": 1,
+   "read_only": 1
   },
   {
    "default": "0",
    "fieldname": "projects_published_count",
    "fieldtype": "Int",
-   "label": "Projets publi\u00e9s"
+   "label": "Projets publi\u00e9s",
+   "read_only": 1
   },
   {
    "default": "0",
    "fieldname": "response_rate",
    "fieldtype": "Percent",
-   "label": "Taux de r\u00e9ponse"
+   "label": "Taux de r\u00e9ponse",
+   "read_only": 1
   },
   {
    "fieldname": "account_seniority",
    "fieldtype": "Read Only",
-   "label": "Anciennet\u00e9 du compte"
+   "label": "Anciennet\u00e9 du compte",
+   "read_only": 1
   },
   {
    "default": "0",
    "fieldname": "profile_completion",
    "fieldtype": "Percent",
-   "label": "Compl\u00e9tion du profil"
+   "label": "Compl\u00e9tion du profil",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-20 16:30:36.660019",
+ "modified": "2026-07-20 15:13:47.850439",
  "modified_by": "Administrator",
  "module": "platform_core",
- "name": "ClientProfile",
+ "name": "Client Profile",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -148,17 +157,6 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Agency",
    "share": 1,
    "write": 1
   }

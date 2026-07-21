@@ -223,10 +223,9 @@
  "index_web_pages_for_search": 1,
  "links": [],
 <<<<<<< HEAD
+<<<<<<< HEAD
  "modified": "2026-07-20 15:29:09.925568",
-=======
- "modified": "2026-07-20 13:56:07.196574",
->>>>>>> 7a090ea82e86629e0c8e10ff889cf1a1cf644782
+>>>>>>> Hooks
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "AgencyProfile",

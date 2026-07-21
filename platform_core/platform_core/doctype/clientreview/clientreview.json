@@ -25,7 +25,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Client (not\u00e9)",
-   "options": "ClientProfile",
+   "options": "Client Profile",
    "reqd": 1
   },
   {
@@ -52,7 +52,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-18 13:00:42.122916",
+ "modified": "2026-07-20 16:16:37.880395",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "ClientReview",

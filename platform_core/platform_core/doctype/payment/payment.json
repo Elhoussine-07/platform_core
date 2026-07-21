@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "PAY-.#####",
  "creation": "2026-07-17 23:03:02.694644",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -77,10 +78,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-18 12:58:10.395022",
+ "modified": "2026-07-20 11:58:53.647203",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "Payment",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

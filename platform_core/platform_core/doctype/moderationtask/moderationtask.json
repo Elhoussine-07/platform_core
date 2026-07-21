@@ -19,7 +19,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Type de t\u00e2che",
-   "options": "Validation\nSuspension\nValidation Termin\u00e9\nAnnulation Devis\nRattachement\nAgence\nLitige Client Inactif\nEscalade Sans\nR\u00e9ponse",
+   "options": "Validation\nSuspension\nValidation Termin\u00e9\nAnnulation Devis\nRattachement\nAgence\nLitige Client Inactif\nEscalade Sans R\u00e9ponse",
    "reqd": 1
   },
   {
@@ -66,7 +66,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-18 11:50:35.050834",
+ "modified": "2026-07-21 11:06:06.410192",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "ModerationTask",

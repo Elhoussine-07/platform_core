@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CL-.#####",
+ "creation": "2026-07-17 14:34:53.192535",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "first_name",
+  "last_name",
+  "company_name",
+  "sector",
+  "phone",
+  "phone_verified",
+  "logo",
+  "country",
+  "legal_id_label",
+  "legal_id",
+  "legal_id_verified",
+  "trust_score",
+  "projects_published_count",
+  "response_rate",
+  "account_seniority",
+  "profile_completion"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Utilisateur",
+   "options": "User",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Pr\u00e9nom",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nom",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Raison sociale"
+  },
+  {
+   "fieldname": "sector",
+   "fieldtype": "Link",
+   "label": "Secteur d\u2019activit\u00e9",
+   "options": "Industry"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "T\u00e9l\u00e9phone"
+  },
+  {
+   "default": "0",
+   "fieldname": "phone_verified",
+   "fieldtype": "Check",
+   "label": "T\u00e9l\u00e9phone v\u00e9rifi\u00e9",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Logo"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Pays",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "legal_id_label",
+   "fieldtype": "Read Only",
+   "label": "Type d\u2019identifiant",
+   "read_only": 1
+  },
+  {
+   "fieldname": "legal_id",
+   "fieldtype": "Data",
+   "label": "Identifiant l\u00e9gal"
+  },
+  {
+   "default": "0",
+   "fieldname": "legal_id_verified",
+   "fieldtype": "Check",
+   "label": "Identifiant v\u00e9rifi\u00e9",
+   "permlevel": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "trust_score",
+   "fieldtype": "Float",
+   "label": "Score de confiance",
+   "permlevel": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "projects_published_count",
+   "fieldtype": "Int",
+   "label": "Projets publi\u00e9s",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "response_rate",
+   "fieldtype": "Percent",
+   "label": "Taux de r\u00e9ponse",
+   "read_only": 1
+  },
+  {
+   "fieldname": "account_seniority",
+   "fieldtype": "Read Only",
+   "label": "Anciennet\u00e9 du compte",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "profile_completion",
+   "fieldtype": "Percent",
+   "label": "Compl\u00e9tion du profil",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-20 15:13:47.850439",
+ "modified_by": "Administrator",
+ "module": "platform_core",
+ "name": "Client Profile",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

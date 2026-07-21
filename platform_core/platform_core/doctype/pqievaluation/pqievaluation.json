@@ -32,7 +32,7 @@
    "fieldname": "results",
    "fieldtype": "Table",
    "label": "R\u00e9sultats",
-   "options": "PQICriterionResult",
+   "options": "PQI Criterion Result",
    "permlevel": 1
   },
   {
@@ -47,7 +47,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-18 11:08:11.397324",
+ "modified": "2026-07-20 16:22:42.003424",
  "modified_by": "Administrator",
  "module": "platform_core",
  "name": "PQIEvaluation",
